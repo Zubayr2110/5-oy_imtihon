@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bgimg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.login_content{
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: rgba(66, 66, 66, 0.253);    
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px 2px #0000006e;
+}
+h1{
+    margin-top: 20px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.form{
+    margin-top: 60px;
+    margin-left: 48px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form_content{
+    display: flex;
+}
+#email{
+    position: relative;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.173);
+}
+#email::placeholder{
+    color: #fff;
+}
+.fa-solid{
+    margin-left: 360px;
+    margin-top: 10px;
+    font-size: 25px;
+    position: absolute;
+}
+
+.form_content1{
+    margin-top: 30px;
+    display: flex;
+}
+#password{
+    position: relative;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.173)
+}
+#password::placeholder{
+    color: rgb(255, 255, 255);
+}
+.preference{
+    width: 100%;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#forgotp{
+    margin-left: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+#singinb{
+    border-radius: 20px;
+    font-weight: 500;
+    top: 425px;
+    left: 180px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 22px;
+    color: white;
+    text-shadow: 0px 0px 20px #fff;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: ease-in-out 450ms;
+    position: absolute;
+}
+#singinb:hover{
+    color: black;
+    background: #fff;
+    /* backdrop-filter: blur(50px); */
+}
+
+
+
+header{
+    width: 1519.5px;
+    height: 790px;
+    background-color: beige;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    border: 1px solid;
+}
+.nav_logo{
+    width: 30%;
+    height: 100%;
+    border: 1px solid;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+}
+li{
+    margin-left: 30px;
+    list-style: none;
+}
+.signin{
+    width: 90px;
+    height: 40px;
+    border: none;
+    background-color: aqua;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.alert{
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;  
+}
+
+
+@media (max-width: 391) {
+    .login{
+        width: 100%;
+        height: 100%;
+    }
+    .login_content{
+        width: 250px;
+        height: 300px;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+    .form{
+        width: 200px;
+        height: 300px;
+        display: none;
+    }
+
+}

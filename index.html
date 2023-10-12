@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login">
+        <div class="login_content">
+            <h1>Sign In</h1>
+            <div class="form">
+                <div class="form_content">
+                    <input type="text" id="email"  placeholder="Enter Nick Name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="form_content1">
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <p class="alert" id="alert"></p>
+                <div class="preference">
+                    <input type="checkbox" name="cheese" id="cheese" />
+                    <label for="cheese">I trust this device</label>
+                    <a href="https://accounts.google.com/signup/v2/createaccount?biz=false&cc=UZ&continue=https%3A%2F%2Fwww.google.com%3Fhl%3Den-US&dsh=S2080682586%3A1693911344464310&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&theme=glif" target="_blank" id="forgotp">Forgot Password</a>
+                </div>
+                <button id="singinb" onclick="addlocal()">Sign In</button>
+            </div>
+        </div>
+    </div>   
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
