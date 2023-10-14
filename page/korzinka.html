@@ -53,15 +53,19 @@
                         <img src="/img/bgimg.jpg" class="shop_item-img1">
                     </div>
                     <div class="shop_item-text">
-                        <p class="shop_item-text-name"></p>
-                        <p class="shop_item-text-price"></p>
+                        <p class="shop_item-text-name">${item.name}</p>
+                        <p class="shop_item-text-price">${item.price} $ <span class="spanshop"> за шт.</span></p>
                     </div>
                     <div class="shop_item-count">
-                        <p class="shop_item-count-left"></p>
-                        <p class="shop_item-count-main"></p>
-                        <p class="shop_item-count-right"></p>
+                        <p class="shop_item-count-left">-</p>
+                        <p class="shop_item-count-main">${cnt}</p>
+                        <p class="shop_item-count-right">+</p>
                     </div>
+                    <p class="shop_item-price">${item.price} $</p>
                 </div>
+            </div>
+            <div class="shop_getprice">
+                
             </div>
         </main>
         <footer></footer>

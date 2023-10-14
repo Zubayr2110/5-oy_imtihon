@@ -16,7 +16,6 @@
 }
 
 header {
-    position: fixed;
     width: 1440px;
     height: 72px;
     border: var(--border);

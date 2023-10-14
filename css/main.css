@@ -71,8 +71,8 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
-    width: 265px;
-    height: 70px;
+    width: 260px;
+    height: 50px;
 }
 
 .item_btn {
@@ -97,6 +97,10 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+}
+
+.item_raiting {
+    margin-left: 8px;
 }
 
 .item_btn:hover {

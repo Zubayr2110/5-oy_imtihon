@@ -34,7 +34,6 @@ window.addEventListener("DOMContentLoaded", () => {
         `
     })
     content.innerHTML = display.join(' ')
-
     const itembtn = document.querySelectorAll('.item_btn')
 
     for(let i = 0; i < itembtn.length; i++) {

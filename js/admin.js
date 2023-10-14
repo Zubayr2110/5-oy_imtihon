@@ -2,6 +2,15 @@ const  namep = document.getElementById('product-name');
 const price = document.getElementById('product-price');
 const btn = document.getElementById('btn')
 
+// click korzinka page
+let korzinka = document.querySelector('.nav_list1-menu2')
+
+korzinka.addEventListener('click', () => {
+    location.href = '/page/korzinka.html'
+})
+// 
+
+
 const img = 'https://picsum.photos/200/300'
 
 const content = document.querySelector('.content')
@@ -38,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img class="item_img" src="${img}">
                 <p class="item_price">${item.price} <span>$</span></p>
                 <p class="itemname">${item.name}</p>
+                <img src="/img/rating.svg" class="item_raiting">
                 <button class="item_btn">В корзину</button>
             </div>
         `
@@ -51,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let el = e.target.parentElement;
             let uid = el.getAttributeNode('data-id').value
             let res = product.find((item) => item.id === uid)
-            console.log(res);
+            
         })
     }
 
@@ -59,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function getshop() {
-    return localStorage.getItem('shop')? JSON.parse(localStorage.getItem('shop')) : []; 
+    return localStorage.getItem('shop') ? JSON.parse(localStorage.getItem('shop')) : []; 
 }
 
 let shop = getshop()
 
-function addshop(id, price, name, img, cnt) {
-    let product = { id, price, name, img, cnt };
+function addshop(id, price, name) {
+    let product = { id, price, name};
     let products = getshop();
     products.push(product);
     localStorage.setItem('shop', JSON.stringify(products));
@@ -84,6 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 <button class="item_btn">В корзину</button>
             </div>
         `
+        location.reload(true)
     })
     const footer = document.querySelector('.footer')
     display = display.join()
